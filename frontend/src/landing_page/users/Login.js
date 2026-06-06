@@ -12,7 +12,7 @@ function Login() {
         password
       }, { withCredentials: true });
 
-      window.location.href = 'http://localhost:3001';
+      window.location.href = 'https://zerodha-dashboard-64oq.onrender.com';
     } catch {
       alert('Login failed, please try again.');
     }
