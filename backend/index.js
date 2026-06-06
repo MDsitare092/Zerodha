@@ -22,7 +22,13 @@ const url = process.env.MONGO_URL;
 
 // CORS + Cookie setup
 app.use(cors({
-  origin: ["http://localhost:3000", "http://localhost:3001"],
+  origin: [
+    "http://localhost:3000", "http://localhost:3001",
+    "https://zerodha-dashboard-64oq.onrender.com",
+    "https://zerodha-frontend-tt9f.onrender.com"
+
+  ],
+  
   credentials: true
 }));
 
