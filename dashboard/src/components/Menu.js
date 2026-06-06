@@ -12,7 +12,7 @@ const Menu = ({ setAuth }) => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:3002/logout', {}, { withCredentials: true });
+      await axios.post('https://zerodha-backend-dtda.onrender.com/logout', {}, { withCredentials: true });
       window.location.href = 'http://localhost:3000/login';
     } catch {
       alert("Logout failed");

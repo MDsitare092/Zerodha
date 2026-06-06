@@ -10,7 +10,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      await axios.post('http://localhost:3002/signup', { username, email, password }, { withCredentials: true });
+      await axios.post('https://zerodha-backend-dtda.onrender.com/signup', { username, email, password }, { withCredentials: true });
       navigate('/login');
     } catch {
       alert('Signup failed, please try again.');

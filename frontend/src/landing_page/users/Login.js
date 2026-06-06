@@ -7,7 +7,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      await axios.post('http://localhost:3002/login', {
+      await axios.post('https://zerodha-backend-dtda.onrender.com/login', {
         username,
         password
       }, { withCredentials: true });
